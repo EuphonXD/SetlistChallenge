@@ -94,17 +94,27 @@
 
 ## 构建
 
-需要 **.NET SDK**（`net48` 目标）+ 游戏目录。
+需要 **.NET SDK**（`net48` 目标）和游戏安装目录。
 
 ```bat
 dotnet build SetlistChallenge\SetlistChallenge.csproj -c Release -p:BeatSaberDir="C:\Program Files (x86)\Steam\steamapps\common\Beat Saber"
-:: 产物: SetlistChallengein\Release\SetlistChallenge.dll
-:: 安装: 复制到 <Beat Saber>\Plugins```
+```
 
-`manifest.json` 里 `gameVersion` 已固定为 `1.44.1`。
+产物：
+
+```
+SetlistChallenge\bin\Release\SetlistChallenge.dll
+```
+
+安装：把 dll 复制到游戏插件目录：
+
+```
+<Beat Saber>\Plugins\SetlistChallenge.dll
+```
+
+`manifest.json` 里的 `gameVersion` 已固定为 `1.44.1`；换游戏版本时要同步改。
 
 ---
-
 ## 目录结构
 
 | 路径 | 说明 |
