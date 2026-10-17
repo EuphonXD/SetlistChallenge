@@ -3,6 +3,17 @@
 > Beat Saber 的「无缝挑战」mod：按预设顺序（或筛选随机）连打多首曲子，**在游戏场景内直接换谱** —— 真无缝，不是打完一首跳回菜单再开下一首。
 
 **支持游戏版本：Beat Saber 1.44.1** ｜ mod 版本 `0.1.0`
+## 配套工具
+
+- **[beat-saber-video-tool](https://github.com/EuphonXD/beat-saber-video-tool)**（网页版）
+  在浏览器里管理歌曲、补 YouTube 链接、批量下载视频，并**直接生成挑战配置**：
+  写到 `UserData/SetlistChallenge/*.json`（本 mod 读取的格式），比手写 JSON 方便很多。
+  它的 **🎬 无缝挑战** 页可以新建/编辑挑战、从播放列表导入、设置“失败即结束/跳过结算”。
+- **[yt-pot-helper](https://github.com/EuphonXD/yt-pot-helper)**（可选）
+  视频批量下载走 yt-dlp，遇到 YouTube “confirm you’re not a bot” 时用它起本地 PoToken 服务。
+
+---
+
 
 ---
 
