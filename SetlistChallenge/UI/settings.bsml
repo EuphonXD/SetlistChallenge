@@ -1,0 +1,16 @@
+<settings-container>
+  <horizontal preferred-width="90">
+    <text text="选一个挑战（在「视频工具 → 🎬 无缝挑战」里编辑）" color="#cccccc" align="Left" word-wrapping="true"/>
+  </horizontal>
+  <dropdown-list-setting text="挑战" value="ChallengeName" options="ChallengeNames" on-change="OnPick" apply-on-change="true"/>
+  <bool-setting text="失败即结束（关闭=倒下后继续打完这首）" value="FailEndsRun" on-change="OnToggle" apply-on-change="true"/>
+  <bool-setting text="换谱时跳过结算（无缝连打）" value="SkipResults" on-change="OnToggle" apply-on-change="true"/>
+  <bool-setting text="显示进度 HUD" value="ShowProgressHud" on-change="OnToggle" apply-on-change="true"/>
+  <horizontal preferred-width="90">
+    <text id="lblStatus" text="　" color="#7ddc7d" align="Left" word-wrapping="true"/>
+  </horizontal>
+  <button text="▶ 开始挑战" on-click="StartChallenge" pref-height="8"/>
+  <horizontal preferred-width="90">
+    <text text="提示：开始后按挑战顺序无缝连打；换谱会破坏成绩提交。" color="#999999" align="Left" word-wrapping="true"/>
+  </horizontal>
+</settings-container>
